@@ -1,0 +1,53 @@
+[project]
+name = "local-censorer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "pandas==3.0.3",
+    "pdfplumber==0.11.9",
+    "pillow==12.2.0",
+    "presidio_analyzer==2.2.362",
+    "presidio_anonymizer==2.2.362",
+    "python-docx==1.1.2",
+    "python-dotenv==1.2.2",
+    "st-annotated-text==4.0.2",
+    "streamlit==1.57.0",
+    "streamlit-tags==1.2.8",
+    "openai",
+    "presidio-analyzer[transformers]==2.2.362",
+
+    # NLP stack
+    "spacy==3.8.14",
+    "stanza==1.11.1",
+    "transformers==4.49.0",
+
+    # CPU torch by default
+    "torch==2.5.1",
+    "torchaudio==2.5.1",
+    "torchvision==0.20.1",
+]
+
+[project.optional-dependencies]
+cuda = [
+    "torch==2.5.1+cu121",
+    "torchaudio==2.5.1+cu121",
+    "torchvision==0.20.1+cu121",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu121", extra = "cuda" },
+]
+torchaudio = [
+    { index = "pytorch-cu121", extra = "cuda" },
+]
+torchvision = [
+    { index = "pytorch-cu121", extra = "cuda" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
