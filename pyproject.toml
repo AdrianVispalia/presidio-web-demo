@@ -1,7 +1,7 @@
 [project]
-name = "local-censorer"
+name = "presidio-web-demo"
 version = "0.1.0"
-description = "Add your description here"
+description = "Streamlit web demo of Microsoft Presidio (remove PII data from text locally)"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
