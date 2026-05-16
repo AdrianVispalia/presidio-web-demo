@@ -4,6 +4,8 @@ Slightly improved web UI for Presidio (PII data remover).
 
 > Original project: https://github.com/microsoft/presidio
 
+![](./images/example.png)
+
 ## Install instructions
 
 1. Install python 3.11
