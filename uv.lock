@@ -521,7 +521,7 @@ wheels = [
 ]
 
 [[package]]
-name = "local-censorer"
+name = "presidio-web-demo"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
@@ -568,11 +568,11 @@ requires-dist = [
     { name = "streamlit", specifier = "==1.57.0" },
     { name = "streamlit-tags", specifier = "==1.2.8" },
     { name = "torch", specifier = "==2.5.1" },
-    { name = "torch", marker = "extra == 'cuda'", specifier = "==2.5.1+cu121", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "local-censorer", extra = "cuda" } },
+    { name = "torch", marker = "extra == 'cuda'", specifier = "==2.5.1+cu121", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "presidio-web-demo", extra = "cuda" } },
     { name = "torchaudio", specifier = "==2.5.1" },
-    { name = "torchaudio", marker = "extra == 'cuda'", specifier = "==2.5.1+cu121", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "local-censorer", extra = "cuda" } },
+    { name = "torchaudio", marker = "extra == 'cuda'", specifier = "==2.5.1+cu121", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "presidio-web-demo", extra = "cuda" } },
     { name = "torchvision", specifier = "==0.20.1" },
-    { name = "torchvision", marker = "extra == 'cuda'", specifier = "==0.20.1+cu121", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "local-censorer", extra = "cuda" } },
+    { name = "torchvision", marker = "extra == 'cuda'", specifier = "==0.20.1+cu121", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "presidio-web-demo", extra = "cuda" } },
     { name = "transformers", specifier = "==4.49.0" },
 ]
 provides-extras = ["cuda"]

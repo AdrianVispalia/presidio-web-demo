@@ -1,4 +1,8 @@
-# Local censorer
+# Presidio web demo
+
+Slightly improved web UI for Presidio (PII data remover)
+
+## Install instructions
 
 1. Install python 3.11
 
